@@ -1,0 +1,50 @@
+body {
+  background-color: #FAF4F0;
+  color: #4A3E3D;
+}
+
+.navbar-pastel {
+  background-color: #D8829D !important;
+}
+
+.btn-rosa {
+  background-color: #D8829D;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-rosa:hover {
+  background-color: #C4718B;
+  color: #FFFFFF;
+}
+
+.btn-cafe {
+  background-color: #FFFFFF;
+  color: #4A3E3D;
+  border: none;
+}
+
+.btn-cafe:hover {
+  background-color: #FAF4F0;
+  color: #4A3E3D;
+}
+
+.text-purpura {
+  color: #6B4E71 !important;
+}
+
+.footer-pastel {
+  background-color: #D8829D !important;
+  color: #FFFFFF;
+}
+
+.nav-pills .nav-link {
+  color: #6B4E71;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #D8829D !important;
+  color: #FFFFFF !important;
+}
