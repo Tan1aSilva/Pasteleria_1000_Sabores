@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - Pastelería Mil Sabores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-pastel">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../visualizacion_catalogo/catalogo_p.html">Mil Sabores</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../visualizacion_catalogo/catalogo_p.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gestion_envios/gestion.html">Envíos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pro_seg_pedidos/procesamiento.html">Mis Pedidos</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="../Registro_autenticacion_usuario/acceso_registro.html" class="btn btn-outline-light btn-sm">Iniciar Sesión</a>
+            <a href="../Registro_autenticacion_usuario/perfil.html" class="btn btn-cafe btn-sm fw-bold">Mi Perfil</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="fw-bold mb-4 text-purpura">Carrito de Compras</h2>
+
+    <div class="row g-4">
+      <div class="col-12 col-lg-8">
+        <div class="card shadow-sm border-0 p-3">
+          <div class="table-responsive">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th style="width: 100px;">Cantidad</th>
+                  <th>Subtotal</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="fw-bold">Torta Lúcuta Manjar</div>
+                    <small class="text-muted">15 porciones</small>
+                  </td>
+                  <td>$18.990</td>
+                  <td>
+                    <input type="number" class="form-control form-control-sm" value="1" min="1">
+                  </td>
+                  <td>$18.990</td>
+                  <td>
+                    <button class="btn btn-outline-danger btn-sm">&times;</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="fw-bold">Torta Chocolate Sacher</div>
+                    <small class="text-muted">20 porciones</small>
+                  </td>
+                  <td>$19.500</td>
+                  <td>
+                    <input type="number" class="form-control form-control-sm" value="1" min="1">
+                  </td>
+                  <td>$19.500</td>
+                  <td>
+                    <button class="btn btn-outline-danger btn-sm">&times;</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card shadow-sm border-0 p-4">
+          <h5 class="fw-bold mb-3 text-purpura">Resumen del Pedido</h5>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Envío estimado</span>
+            <span>$3.000</span>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between mb-4">
+            <span class="fw-bold fs-5">Total</span>
+            <span class="fw-bold fs-5 text-purpura">$41.490</span>
+          </div>
+          <a href="../pro_seg_pedidos/procesamiento.html" class="btn btn-rosa w-100 fw-bold">Proceder al Pago</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-pastel py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+      <small class="text-white-50">Desarrollo Web Frontend - Duoc UC</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>

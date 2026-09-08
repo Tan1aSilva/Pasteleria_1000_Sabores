@@ -1,0 +1,34 @@
+body {
+  background-color: #FAF4F0;
+  color: #4A3E3D;
+}
+
+.navbar-pastel {
+  background-color: #D8829D;
+}
+
+.btn-rosa {
+  background-color: #D8829D;
+  color: white;
+  border: none;
+}
+
+.btn-rosa:hover {
+  background-color: #C4718B;
+  color: white;
+}
+
+.btn-cafe {
+  background-color: #FFFFFF;
+  color: #4A3E3D;
+  border: none;
+}
+
+.text-purpura {
+  color: #6B4E71;
+}
+
+.footer-pastel {
+  background-color: #D8829D;
+  color: white;
+}
