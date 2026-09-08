@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Pasteleria Mil Sabores!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand text-white fw-bold me-4" href="index.html">Mil Sabores</a>
+                <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="producto.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="gestion.html">Envíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="procesamiento.html">Mis Pedidos</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-outline-light btn-sm px-3">Iniciar Sesión</a>
+                        <a href="perfil.html" class="btn btn-custom-profile btn-sm px-3">Mi Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner" class="container my-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-container text-center">
+                        <img src="https://media.scoolinary.app/blog/images/2020/07/tipos-de-cremas-en-pasteler%C3%ADa.jpg" class="img-fluid rounded shadow" alt="Pastelería Mil Sabores Banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="descripcion" class="container my-5 text-center">
+            <h1 class="fw-bold mb-3">Bienvenidos a Pastelería Mil Sabores</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                Somos Pastelería Mil Sabores, quienes celebramos nuestro 50 aniversario como un referente en la repostería chilena.
+                somos famosos por nuestra participación en un récord Guinness en 1995, cuando colaboramos en la creación de la
+                torta más grande del mundo.
+            </p>
+            <br><br>
+            <p class="lead text-muted mx-auto" style="max-width: 800px;">
+                una experiencia dulce y memorable a nuestros clientes, proporcionando tortas y productos
+                de repostería de alta calidad para todas las ocasiones, mientras celebramos nuestras raíces
+                históricas y fomentamos la creatividad en la repostería.
+            </p>
+        </section>
+
+        <section id="productos" class="container my-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">Nuestros Productos Destacados</h2>
+                <a href="productos.html" class="btn btn-outline-primary">Ver Catálogo Completo &rarr;</a>
+            </div>
+
+            <div id="contenedorDestacados" class="row g-4"></div>
+        </section>
+
+        <section id="comunidad" class="bg-light py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Noticias y Comunidad Duoc UC</h2>
+                <p class="text-center text-muted mb-5">Conoce las últimas novedades, convenios e iniciativas gastronómicas de la comunidad Duoc UC.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm d-flex flex-column">
+                            <img src="https://www.duoc.cl/wp-content/uploads/2026/01/IMG_1657-1-450x250.jpg" class="card-img-top" alt="Enoturismo Casablanca">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Convenio para potenciar el enoturismo</h5>
+                                <p class="card-text text-muted flex-grow-1">Duoc UC Sede Valparaíso y Viña Casas del Bosque firman un importante convenio para impulsar el desarrollo gastronómico y enoturístico del Valle de Casablanca.</p>
+                                <a href="https://www.duoc.cl/?noticia_post_type=duoc-uc-sede-valparaiso-y-vina-casas-del-bosque-firman-convenio-para-potenciar-el-enoturismo-del-valle-de-casablanca" target="_blank" class="btn btn-sm btn-outline-primary mt-3">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm d-flex flex-column">
+                            <img src="https://www.duoc.cl/wp-content/uploads/2025/12/100-450x250.jpg" class="card-img-top" alt="Juna Chef Receta">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Receta estudiantil en Plan Piloto Junaeb</h5>
+                                <p class="card-text text-muted flex-grow-1">Una propuesta gastronómica creada por estudiantes de Duoc UC formará parte del programa piloto "Juna Chef" para enriquecer la alimentación escolar.</p>
+                                <a href="https://www.duoc.cl/?noticia_post_type=juna-chef-receta-de-estudiantes-duoc-uc-sera-parte-del-plan-piloto-de-junaeb-para-alimentacion-escolar" target="_blank" class="btn btn-sm btn-outline-primary mt-3">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm d-flex flex-column">
+                            <img src="https://www.duoc.cl/wp-content/uploads/2025/09/chef-talks-agosto-2025_-450x250.jpg" class="card-img-top" alt="Chef Talks">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">ChefTalks: Cocina Territorial</h5>
+                                <p class="card-text text-muted flex-grow-1">Destacado chef nacional se reunió con estudiantes y docentes en una jornada de ChefTalks orientada a promover y revalorizar la identidad de la cocina territorial.</p>
+                                <a href="https://www.duoc.cl/?noticia_post_type=cheftalks-reunio-a-destacado-chef-nacional-con-estudiantes-y-docentes-para-promover-el-desarrollo-de-la-cocina-territorial" target="_blank" class="btn btn-sm btn-outline-primary mt-3">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="custom-footer text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="mb-1">2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+            <small class="text-white-50">Desarrollo Twice - Duoc UC</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>
