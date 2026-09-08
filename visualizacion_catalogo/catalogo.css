@@ -1,11 +1,25 @@
-/* Estilos Globales */
+/*colores en general de catalogo*/
 body {
-    background-color: #FFF5E1 !important; /* Crema pastel */
-    color: #5D4037;
+    background-color: #FAF4F0 !important;
+    color: #4A3E3D;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Tarjetas de Productos */
+/* texto */
+.text-purpura {
+    color: #6B4E71;
+}
+
+.text-cafe {
+    color: #4A3E3D;
+}
+
+/* contenedores y las tarjetas */
+.panel-filtro {
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
 .card-producto {
     border: none;
     border-radius: 15px;
@@ -25,28 +39,39 @@ body {
     border-top-right-radius: 15px;
 }
 
-/* Botones */
-.btn-chocolate {
-    background-color: #8B4513 !important; /* Chocolate */
-    color: #ffffff !important;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
+/* componentes de navegacion y botones */
+.navbar-pastel,
+.footer-pastel {
+    background-color: #D8829D;
+    color: white;
 }
 
-.btn-chocolate:hover {
-    background-color: #5D4037 !important;
+.btn-rosa {
+    background-color: #D8829D;
+    color: white;
+    border: none;
+}
+
+.btn-rosa:hover {
+    background-color: #C4718B;
+    color: white;
+}
+
+.btn-cafe {
+    background-color: #8c40aa;
+    color: #4A3E3D;
+    border: none;
 }
 
 .btn-filtro {
-    background-color: #FFC0CB; /* Rosa suave */
-    color: #5D4037;
-    border: none;
+    background-color: #ffffff;
+    color: #4A3E3D;
+    border: 1px solid #D8829D;
     font-weight: 600;
 }
 
 .btn-filtro:hover, 
 .btn-filtro.active {
-    background-color: #8B4513 !important;
+    background-color: #D8829D !important;
     color: #ffffff !important;
 }
