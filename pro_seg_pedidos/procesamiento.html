@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesamiento de Pedidos - Pastelería 1000 Sabores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="procesamiento.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+ 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-pastel">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../visualizacion_catalogo/catalogo_p.html">Mil Sabores</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../visualizacion_catalogo/catalogo_p.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../funcionalidad_carrito/carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../gestion_envios/gestion.html">Envíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="procesamiento.html">Mis Pedidos</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="../Registro_autenticacion_usuario/login.html" class="btn btn-outline-light btn-sm">Iniciar Sesión</a>
+                        <a href="../Registro_autenticacion_usuario/perfil.html" class="btn btn-cafe btn-sm fw-bold">Mi Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="container my-5 flex-grow-1">
+        <h1 class="text-center mb-4 fw-bold text-purpura">Pastelería 1000 Sabores</h1>
+ 
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+ 
+                <div class="card p-4 border-0 shadow-sm card-procesamiento">
+                    <h4 class="fw-bold text-purpura mb-3 text-center">Procesamiento de Pedidos</h4>
+ 
+                    <form onsubmit="procesarEnvio(event)">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold text-cafe">Tipo de Despacho</label>
+                            <div class="d-flex gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipoDespacho" id="envioDomicilio" checked onchange="actualizarOpcionesEnvio()">
+                                    <label class="form-check-label text-cafe" for="envioDomicilio">Envío a Domicilio</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="tipoDespacho" id="retiroTienda" onchange="actualizarOpcionesEnvio()">
+                                    <label class="form-check-label text-cafe" for="retiroTienda">Retiro en Tienda</label>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        <div class="row g-3 mb-3" id="contenedorDireccion">
+                            <div class="col-md-6">
+                                <label for="selectComuna" class="form-label fw-bold text-cafe">Comuna</label>
+                                <select class="form-select" id="selectComuna" onchange="actualizarOpcionesEnvio()">
+                                    <option value="santiago">Santiago Centro ($2.500)</option>
+                                    <option value="providencia">Providencia ($3.000)</option>
+                                    <option value="las_condes">Las Condes ($3.500)</option>
+                                    <option value="la_florida">La Florida ($3.000)</option>
+                                    <option value="maipu">Maipú ($4.000)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputDireccion" class="form-label fw-bold text-cafe">Dirección</label>
+                                <input type="text" class="form-control" id="inputDireccion" placeholder="Calle, número, depto" required>
+                            </div>
+                        </div>
+ 
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="fechaEntrega" class="form-label fw-bold text-cafe">Fecha de Entrega</label>
+                                <input type="date" class="form-control" id="fechaEntrega" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="horaEntrega" class="form-label fw-bold text-cafe">Hora Preferencial</label>
+                                <input type="time" class="form-control" id="horaEntrega" required>
+                            </div>
+                        </div>
+ 
+                        <!-- Resumen del costo -->
+                        <div class="box-resumen p-3 mb-3 d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-cafe">Costo del Envío:</span>
+                            <span class="fw-bold text-purpura fs-5" id="costoEnvioTexto">$2.500</span>
+                        </div>
+ 
+                        <!-- Botón de Acción -->
+                        <button type="submit" class="btn btn-rosa w-100 rounded-pill fw-bold py-2">Procesar Despacho</button>
+                    </form>
+                </div>
+ 
+            </div>
+        </div>
+    </main>
+ 
+    <footer class="footer-pastel py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Pastelería Mil Sabores. Todos los derechos reservados.</p>
+            <small class="text-white-50">Desarrollo Web Frontend - Duoc UC</small>
+        </div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="procesamiento.js"></script>
+</body>
+</html>
