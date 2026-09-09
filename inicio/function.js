@@ -5,7 +5,7 @@ const productos = [
         nombre: "Torta Cuadrada de Chocolate",
         descripcion: "Chocolate con ganache y avellanas tostadas. Bizcocho húmedo, nada seco. Es la que nunca falla cuando no sabís qué pedir.",
         precio: 45000,
-        imagen: "imagenhtml/Torta Cuadrada de Chocolate.jfif"
+        imagen: "../visualizacion_catalogo/imagenhtml/Torta Cuadrada de Chocolate.jfif"
     },
     {
         codigo: "TC002",
@@ -13,7 +13,7 @@ const productos = [
         nombre: "Torta Cuadrada de Frutas",
         descripcion: "Vainilla, crema y fruta fresca de la feria. Simple pero rica, como las que hacen en las casas de verano.",
         precio: 50000,
-        imagen: "imagenhtml/Torta Cuadrada de Frutas.jfif"
+        imagen: "../visualizacion_catalogo/imagenhtml/Torta Cuadrada de Frutas.jfif"
     },
     {
         codigo: "TT001",
@@ -21,7 +21,7 @@ const productos = [
         nombre: "Torta Circular de Vainilla",
         descripcion: "La torta de cumpleaños de siempre. Bizcochuelo esponjoso con crema pastelera casera, sin vueltas raras.",
         precio: 40000,
-        imagen: "imagenhtml/Torta Circular de Vainilla.jfif"
+        imagen: "../visualizacion_catalogo/imagenhtml/Torta Circular de Vainilla.jfif"
     },
     {
         codigo: "TT002",
@@ -29,7 +29,7 @@ const productos = [
         nombre: "Torta Circular de Manjar",
         descripcion: "Manjar hecho en paila, reducido de a poco, con nueces picadas. Un sabor que a mucha gente le recuerda al sur.",
         precio: 42000,
-        imagen: "imagenhtml/Torta Circular de Manjar.webp"
+        imagen: "../visualizacion_catalogo/imagenhtml/Torta Circular de Manjar.webp"
     },
     {
         codigo: "P1001",
