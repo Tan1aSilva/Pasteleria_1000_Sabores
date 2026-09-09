@@ -1,20 +1,12 @@
-/*colores en general de catalogo*/
 body {
     background-color: #FAF4F0 !important;
     color: #4A3E3D;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* texto */
-.text-purpura {
-    color: #6B4E71;
-}
+.text-purpura { color: #6B4E71; }
+.text-cafe { color: #4A3E3D; }
 
-.text-cafe {
-    color: #4A3E3D;
-}
-
-/* contenedores y las tarjetas */
 .panel-filtro {
     border-radius: 15px;
     background-color: #ffffff;
@@ -27,11 +19,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease;
 }
-
-.card-producto:hover {
-    transform: translateY(-5px);
-}
-
+.card-producto:hover { transform: translateY(-5px); }
 .card-producto img {
     height: 180px;
     object-fit: cover;
@@ -39,7 +27,6 @@ body {
     border-top-right-radius: 15px;
 }
 
-/* componentes de navegacion y botones */
 .navbar-pastel,
 .footer-pastel {
     background-color: #D8829D;
@@ -51,11 +38,7 @@ body {
     color: white;
     border: none;
 }
-
-.btn-rosa:hover {
-    background-color: #C4718B;
-    color: white;
-}
+.btn-rosa:hover { background-color: #C4718B; color: white; }
 
 .btn-cafe {
     background-color: #8c40aa;
@@ -69,8 +52,7 @@ body {
     border: 1px solid #D8829D;
     font-weight: 600;
 }
-
-.btn-filtro:hover, 
+.btn-filtro:hover,
 .btn-filtro.active {
     background-color: #D8829D !important;
     color: #ffffff !important;

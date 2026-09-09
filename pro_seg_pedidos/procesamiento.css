@@ -1,0 +1,47 @@
+body {
+    background-color: #FAF4F0 !important;
+    color: #4A3E3D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-purpura {
+    color: #6B4E71;
+}
+
+.text-cafe {
+    color: #4A3E3D;
+}
+
+/* las tarjetas y contenedores */
+.card-procesamiento {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.box-resumen {
+    background-color: #FAF4F0;
+    border: 1px dashed #D8829D;
+    border-radius: 10px;
+}
+
+/* botones */
+.btn-rosa {
+    background-color: #D8829D;
+    color: white;
+    border: none;
+}
+
+.btn-rosa:hover {
+    background-color: #C4718B;
+    color: white;
+}
+
+.badge-estado {
+    background-color: #D8829D;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+    border-radius: 20px;
+}
