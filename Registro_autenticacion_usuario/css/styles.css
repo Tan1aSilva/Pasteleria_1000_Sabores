@@ -39,7 +39,7 @@ body {
 }
 
 .nav-pills .nav-link {
-  color: #6B4E71;
+  color: #FFFFFF;
   font-weight: bold;
   border-radius: 8px;
 }
@@ -47,4 +47,15 @@ body {
 .nav-pills .nav-link.active {
   background-color: #D8829D !important;
   color: #FFFFFF !important;
+}
+
+.navbar-pastel .nav-link,
+.navbar-pastel .navbar-brand,
+.navbar-pastel a {
+  color :#FFFFFF !important
+}
+
+.navbar-pastel .btn-cafe,
+.navbar-pastel .btn-cafe a {
+  color: #4A3E3D !important;
 }
