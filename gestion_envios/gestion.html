@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestión de Envíos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-white fs-4" href="../inicio/Index.html">Mil Sabores</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../visualizacion_catalogo/productos.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../funcionalidad_carrito/carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active fw-semibold" href="gestion.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../pro_seg_pedidos/procesamiento.html">Mis Pedidos</a>
+                    </li>
+                </ul>
+                <button class="btn btn-light custom-btn-logout fw-semibold">Cerrar Sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <h2 class="mb-4 text-center custom-title fw-bold">Gestión y Seguimiento de Envíos</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-4 border-0 rounded-3">
+                    <h4 class="custom-title mb-3">Programar Entrega</h4>
+                    <form id="formEnvio">
+                        <div class="mb-3">
+                            <label for="idPedido" class="form-label">ID del Pedido</label>
+                            <input type="text" class="form-control" id="idPedido" placeholder="Ej: PED-1002" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección de Destino</label>
+                            <input type="text" class="form-control" id="direccion" placeholder="Av. Principal 123" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaEntrega" class="form-label">Fecha Preferida de Entrega</label>
+                            <input type="date" class="form-control" id="fechaEntrega" required>
+                        </div>
+                        <button type="submit" class="btn custom-btn-primary w-100 fw-bold">Crear Envío</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-4 border-0 rounded-3">
+                    <h4 class="custom-title mb-3">Consulta de Seguimiento</h4>
+                    <div class="input-group my-3">
+                        <input type="text" id="buscarCodigo" class="form-control" placeholder="Ingrese Código de Envío">
+                        <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+                    </div>
+
+                    <div id="resultadoSeguimiento" class="d-none alert alert-info">
+                        <p class="mb-1"><strong>Pedido:</strong> <span id="resPedido"></span></p>
+                        <p class="mb-1"><strong>Estado:</strong> <span id="resEstado" class="tracking-status text-uppercase"></span></p>
+                        <p class="mb-0"><strong>Fecha Programada:</strong> <span id="resFecha"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card p-4 border-0 rounded-3">
+                    <h4 class="custom-title mb-3">Lista de Envíos Activos</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped align-middle mt-2">
+                            <thead>
+                                <tr>
+                                    <th>Código Envío</th>
+                                    <th>ID Pedido</th>
+                                    <th>Dirección</th>
+                                    <th>Fecha Entrega</th>
+                                    <th>Estado</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaEnvios">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer text-center text-white py-3 mt-auto">
+        <p class="mb-1"> 2026 Todos los derechos reservados.</p>
+        <p class="mb-0 small opacity-75">Desarrollo Twice</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="function.js"></script>
 </body>
 </html>

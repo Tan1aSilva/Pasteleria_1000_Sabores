@@ -1,0 +1,38 @@
+body {
+    background-color: #fbf7f4;
+}
+
+.custom-navbar, .custom-footer {
+    background-color: #db819a;
+}
+
+.custom-title {
+    color: #6a3e5c;
+}
+
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.custom-btn-primary {
+    background-color: #d97d97;
+    border-color: #d97d97;
+    color: #ffffff;
+}
+
+.custom-btn-primary:hover {
+    background-color: #c86c86;
+    border-color: #c86c86;
+    color: #ffffff;
+}
+
+.custom-btn-logout {
+    color: #333333;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.tracking-status {
+    font-weight: bold;
+}
